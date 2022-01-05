@@ -1,0 +1,5 @@
+docker build -t demovol -f ./DemoVolApi/Dockerfile .
+
+docker run -d -p 8081:80 -v db_vol:/app demovol
+docker run -d -p 8082:80 -v db_vol:/app demovol
+
